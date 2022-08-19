@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Simple Access Control"
-parent: Tutorial
+parent: Tutorials
 has_children: false
 nav_order: 2
 ---
