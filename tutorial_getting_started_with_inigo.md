@@ -1,6 +1,6 @@
 ---
 title: "Tutorial: Getting Started"
-parent: Tutorial
+parent: Tutorials
 has_children: false
 nav_order: 1
 ---
