@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Getting Started"
+title: Getting Started
 parent: Tutorials
 has_children: false
 nav_order: 1
