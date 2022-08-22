@@ -14,7 +14,7 @@ The Starward Demo Playground comes prefilled with sample queries to get a feelin
 
 ## Access Playground
 
-1. Log in to your account at [app.inigo.io](https://app.inigo.io)
+1. Log in to your account at <a href="[http://example.com/](https://app.inigo.io)" target="_blank">app.inigo.io</a>
 2. Click and access the Playground
 
 ![Playground Access](/assets/images/playground_access.png)
@@ -119,8 +119,7 @@ query hitMaxCredits {
 ```
 
 ## Explore Analytics
-Visiting the [Inigo analytics console](https://app.inigo.io) is where GraphQL usage can be explored, and abusive calls be investigated.
-
+Visiting the <a href="[http://example.com/](https://app.inigo.io)" target="_blank">Inigo analytics console</a> is where GraphQL usage can be explored, and abusive calls be investigated.
 
 ## What's Next
 
