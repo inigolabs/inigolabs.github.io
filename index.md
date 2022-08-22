@@ -14,6 +14,8 @@ Inigo blocks, modify, and enforce incoming queries before they hit your server.
 
 ![Deployment](/assets/images/deployment.png =200x)
 
+<img src="/assets/images/deployment.png" alt="Deployment" width="200"/>
+
 Your first step is to explore the [Starwars Demo Playground](/tutorials_starwars_playground.html). Once you get the hang of it, it's time to apply your own configuration. Achieving both will grant you a master title - You are ready to add your own service and apply your own server configuration.
 
 Let's start.
