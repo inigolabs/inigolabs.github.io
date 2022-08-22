@@ -118,6 +118,10 @@ query hitMaxCredits {
 }
 ```
 
+# Explore Analytics
+Visiting the [Inigo analytics console](https://app.inigo.io) is where GraphQL usage can be explored, and abusive calls be investigated.
+
+
 ## What's Next
 
 Let's walk through the steps to apply our own configurations to the Starwars server - [Starwars Demo Configuration](/tutorials_starwars_configuration.html).
