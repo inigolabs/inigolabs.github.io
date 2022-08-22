@@ -118,7 +118,7 @@ query hitMaxCredits {
 }
 ```
 
-# Explore Analytics
+## Explore Analytics
 Visiting the [Inigo analytics console](https://app.inigo.io) is where GraphQL usage can be explored, and abusive calls be investigated.
 
 
