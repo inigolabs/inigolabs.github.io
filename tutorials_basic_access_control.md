@@ -2,7 +2,7 @@
 title: Basic Access Control
 parent: Tutorials
 has_children: false
-nav_order: 2
+nav_order: 11
 ---
 
 # Tutorial: How to set up simple access control for GraphQL operations
