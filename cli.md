@@ -4,7 +4,7 @@ has_children: true
 nav_order: 4
 ---
 
-# Inigo CLI Manual
+# Inigo CLI
 
 Inigo CLI, or `inigo`, is a command line interface to Inigo for use in terminal or ci/cd pipelines. 
 
