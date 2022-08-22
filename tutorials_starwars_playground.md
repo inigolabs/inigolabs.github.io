@@ -24,6 +24,14 @@ The Starward Demo Playground comes prefilled with sample queries to get a feelin
 ### missingOperationsName
 By default, all queries must have an operation name. See what happens when it doesn't.
 
+```
+query {
+	films {
+    title
+  }
+}
+```
+
 ### maxDepth
 By default, max depth was defined as 3. See what happens if a query passes that.
 
