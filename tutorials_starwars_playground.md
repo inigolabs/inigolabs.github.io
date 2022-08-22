@@ -21,6 +21,10 @@ The Starward Demo Playground comes prefilled with sample queries to get a feelin
 
 ## Prefilled Queries to Test
 
+Starting with some basic example queries to see how Inigo secure the Starwars server
+![image](https://user-images.githubusercontent.com/9330805/185870446-b3ea057c-5a10-4c7b-8ad8-d3a5ce5e045b.png)
+
+
 ### missingOperationsName
 By default, all queries must have an operation name. See what happens when they don't.
 
