@@ -2,14 +2,14 @@
 title: Getting Started
 parent: Tutorials
 has_children: false
-nav_order: 1
+nav_order: 10
 ---
 
 # Tutorial: Getting started with Inigo
 
 ## Key information
 
-Specific Indigo features that this tutorial covers include the following.
+Specific Inigo features that this tutorial covers include the following.
 
 | Object | Data |
 | --- | --- |
