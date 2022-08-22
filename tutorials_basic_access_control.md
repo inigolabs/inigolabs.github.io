@@ -20,8 +20,8 @@ Specific Indigo features that this tutorial covers include the following.
 | Useful commands | `inigo apply configs/access.yml`|
 | Useful URLs | `https://app.inigo.io` (developer dashboard)<br>`https://app.inigo.io/schema_view` (schema explorer) |
 | Configuration files | `access.yml` (maps roles to access control configuration files)<br>`access/viewer.inigo` (configuration file for the `viewer` role) |  
-| Configuration items | `config_files` | 
- 
+| Configuration items | `config_files` |
+
 ## Introduction
 
 In this tutorial, you will:
@@ -70,14 +70,14 @@ It is ideal if you are somewhat familiar with the starwars service schema often 
 1. Open the `starwars/access.yml` file in the examples project using a text editor.
 2. Verify that the `spec:` section of the file has set up an unauthenticated `guest` user with the `viewer` role. Look for the following lines immediately after `spec:`
     ```
-    unauthenticated_profile: guest  
-    unauthenticated_roles:  
-      - viewer  
+    unauthenticated_profile: guest
+    unauthenticated_roles:
+      - viewer
     ```
     > **NOTE**: A profile can be assigned multiple roles, but to keep it simple we'll work with profile having a single role.
 3. Within the `roles:` subsection of the file, ensure that the `viewer` role is associated with an Inigo config file as follows:
     ```
-    - name: viewer  
+    - name: viewer
       config_files:
         - access/viewer.inigo
     ```
@@ -102,7 +102,7 @@ It is ideal if you are somewhat familiar with the starwars service schema often 
       director
       characters
     }
-    
+
     type Person {
       name
       hairColor
@@ -110,9 +110,9 @@ It is ideal if you are somewhat familiar with the starwars service schema often 
     }
     ````
     These access control rules indicate that the viewer has access to the `login`, `logout`, `films`, and `people` nodes in the starwars service schema.
-    
+
     Viewing the schema at `https://dev.inigo.io/schema_view`, you can see that `films` is an array of type `Film` and `people` is an array of type `Person`.
-    
+
     When a node is an object (such as films) rather than a scalar value (such as title), you can specify the available contents of that object in two ways:
     * Edge-based: Specify access rules inline in { } within the query access rule.
     * Node-based: Specify access rules separately by object type.
@@ -128,10 +128,10 @@ It is ideal if you are somewhat familiar with the starwars service schema often 
 ### 3. Run a test query in the Inigo playground
 1. Open a browser window to the GraphQL playground at https://dev.inigo.io/starwars/playground
     > **NOTE:** Verify that the URL text box within the playground window contains `https://dev.inigo.io/starwars/query`. If it does not, paste that URL into the text box.
-2. Copy the following query into the edit (left) pane:  
+2. Copy the following query into the edit (left) pane:
     ```graphql
-    query ListFilmInfo {  
-      films {  
+    query ListFilmInfo {
+      films {
         title
         characters {
           name
@@ -139,8 +139,8 @@ It is ideal if you are somewhat familiar with the starwars service schema often 
       }
     }
     ```
-3. Click the arrow icon between the panes, to execute that operation.  
-4. Verify that you see a response like: 
+3. Click the arrow icon between the panes, to execute that operation.
+4. Verify that you see a response like:
     ```
     {
       "data": {
@@ -234,7 +234,7 @@ It is ideal if you are somewhat familiar with the starwars service schema often 
       director
       characters
     }
-    
+
     type Person {
       name
       hairColor
@@ -249,17 +249,17 @@ It is ideal if you are somewhat familiar with the starwars service schema often 
 
 ### 5. Test that the id node is now accessible
 1. Go back to the GraphQL playground browser window.
-2. Copy the following text into the edit (left) pane:  
+2. Copy the following text into the edit (left) pane:
     ```graphql
-    query ListFilmInfo {  
-      films {  
+    query ListFilmInfo {
+      films {
         title
-        id  
-      }  
+        id
+      }
     }
     ```
-3. Click the arrow icon between the panes, to execute that operation.  
-4. Verify that you see a response like: 
+3. Click the arrow icon between the panes, to execute that operation.
+4. Verify that you see a response like:
     ```
     {
       "data": {
@@ -306,19 +306,19 @@ It is ideal if you are somewhat familiar with the starwars service schema often 
 So far, we've only run queries that access schema elements available to the `viewer` role. In this step, we'll look at what happens when a query references a schema element for which it does not have permissions.
 
 1. Open a browser window to the GraphQL playground at https://dev.inigo.io/starwars/playground
-2. Copy the following text into the edit (left) pane:  
+2. Copy the following text into the edit (left) pane:
     ```graphql
-    query ListFilmInfo {  
-      films {  
+    query ListFilmInfo {
+      films {
         title
         id
         planets
-      }  
+      }
     }
     ```
     > **NOTE:** The `planets` schema element in this query was not specified in the access control file for the `viewer` role, so it should not be accessible to our user.
-    
-3. Click the arrow icon between the panes, to execute that operation.  
+
+3. Click the arrow icon between the panes, to execute that operation.
 4. The response you receive should have a `data` section, followed by an empty `extensions` section and an `errors` section indicating that this profile does not have access to the `films/planets` schema element: 
     ```graphql
     {

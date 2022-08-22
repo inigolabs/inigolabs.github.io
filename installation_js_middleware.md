@@ -21,7 +21,7 @@ A working development environment is always preferred with a stable node.js and 
    npm install inigo.js
    ```
 2. Install your platform specific library:
-    
+
     #### Available libraries:
     ```
     - inigo-linux-amd64
@@ -34,7 +34,7 @@ A working development environment is always preferred with a stable node.js and 
     ```
     For example, install `inigo-linux-amd64`
     ```sh
-    npm install inigo-linux-amd64 
+    npm install inigo-linux-amd64
     ```
 
 ### Configuration
@@ -64,7 +64,7 @@ A working development environment is always preferred with a stable node.js and 
           ```js
           import { printSchema } from 'graphql';
           ```
-      
+
       3. Create an inigo config object
           ```js
           const inigoCfg = new InigoConfig({
