@@ -21,7 +21,7 @@ Specific Indigo features that this tutorial covers include the following.
 
 Welcome to the Inigo platform!
 
-If you're here, you've probably signed up for an account at http://dev.inigolabs.io, and are ready to start exploring how Inigo helps you manage GraphQL APIs.
+If you're here, you've probably signed up for an account at http://app.inigo.io, and are ready to start exploring how Inigo helps you manage GraphQL APIs.
 
 In this tutorial, you will:
 * Create an Inigo sample service based on the well-known starwars GraphQL sample service,
@@ -41,7 +41,7 @@ With GraphQL out-of-the-box, operation names are optional. To help your organiza
 To use this tutorial, you must have:
 
 * The GraphQL command line utilities installed on your local system. For installation instructions see [Installing the Inigo CLI tools](../guides/installing-inigo-cli-tools.md).
-* A user ID and password that allows access to the GraphQL developer dashboard at https://dev.inigo.io and the developer playground at https://dev.inigo.io/starwars/playground. If you do not have access yet, go to https://dev.inigo.io and sign up!
+* A user ID and password that allows access to the GraphQL developer dashboard at https://app.inigo.io and the developer playground at https://dev.inigo.io/starwars/playground. If you do not have access yet, go to https://app.inigo.io and sign up!
 
 ## Steps
 ### 1. Initialize a new GraphQL API on Inigo
@@ -87,8 +87,8 @@ To use this tutorial, you must have:
     ```
 
 ### 4. Verify the change
-1. Open a browser window to the GraphQL playground at https://dev.inigo.io/starwars/playground
-    > **NOTE:** Verify that the URL text box within the playground window contains `https://dev.inigo.io/starwars/query`. If it does not, paste that URL into the text box.
+1. Open a browser window to the GraphQL playground at https://app.inigo.io/starwars/playground
+    > **NOTE:** Verify that the URL text box within the playground window contains `https://app.inigo.io/starwars/query`. If it does not, paste that URL into the text box.
 2. Copy the following text that defines an unnamed query into the edit (left) pane:  
     ```graphql
     query {  
