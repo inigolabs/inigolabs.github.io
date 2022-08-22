@@ -29,23 +29,23 @@ To be able to apply your own setting, download the [Starwars default configurati
 
 Get the Inigo CLI tool:
 ```console
-brew tap inigolabs/homebrew-tap
+> brew tap inigolabs/homebrew-tap
 ```
 Following by:
 ```console
-brew install inigo_cli
+> brew install inigo_cli
 ```
 
 ## Login
 Using the same credentials from [app.inigo.io](https://app.inigo.io)
 ```console
-inigo login
+> inigo login
 ```
 
 ## Apply Configuration 
 Apply new configuration to the Starwars service
 ```console
-inigo apply *.yml
+> inigo apply *.yml
 ```
 
 ## Replay Playground Queries
