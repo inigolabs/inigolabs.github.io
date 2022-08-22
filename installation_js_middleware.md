@@ -10,7 +10,7 @@ nav_order: 1
 ### Prerequisites
 
 A working development environment is always preferred with a stable node.js and build essentials
-* having [setup](app.inigo.io) an inigo account and created a service token
+* having [setup](https://app.inigo.io) an Inigo account and created a service token
 * nodejs & npm: https://nodejs.org
 * gcc (in case the ffi module is not prebuilt for your platform)
 
