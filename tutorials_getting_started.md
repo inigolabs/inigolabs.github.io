@@ -1,5 +1,4 @@
 ---
-title: Getting Started
 parent: Tutorials
 has_children: false
 nav_exclude: true
