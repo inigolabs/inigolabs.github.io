@@ -18,4 +18,6 @@ Your first step is to explore the [Starwars Demo Playground](/tutorials_starwars
 
 Let's start.
 
-For any questions, join our slack chanal at slack.inigo.io
+For any questions, join our [Slack channel](https://slack.inigo.io).
+
+
