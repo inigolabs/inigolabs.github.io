@@ -6,9 +6,11 @@ nav_order: 1
 
 ## Introduction
 
-Welcome to [Inigo](https://inigo.io).
+Welcome to <a href="https://inigo.io" target="_blank">Inigo</a>).
 
-If you're here, you've probably signed up for an account at [app.inigo.io](https://app.inigo.io) and are ready to start exploring how Inigo helps you manage GraphQL APIs.
+If you're here, you've probably signed up for an account at <a href="https://app.inigo.io" target="_blank">app.inigo.io</a> and are ready to start exploring how Inigo helps you manage GraphQL APIs.
+
+
 
 Inigo blocks, modify, and enforce incoming queries before they hit your server.
 
@@ -21,4 +23,6 @@ Let's start:
 2. [Starwars Demo Configuration](/tutorials_starwars_configuration.html)
 
 
-For any questions, join our [Slack channel](https://slack.inigo.io).
+For any questions, join our <a href="https://slack.inigo.io" target="_blank">Slack channel</a>).
+
+
