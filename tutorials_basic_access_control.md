@@ -1,5 +1,4 @@
 ---
-title: Basic Access Control
 parent: Tutorials
 has_children: false
 nav_exclude: true
