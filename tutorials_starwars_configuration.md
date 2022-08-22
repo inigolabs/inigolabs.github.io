@@ -49,7 +49,7 @@ inigo apply *.yml
 ```
 
 ## Replay Playground Queries
-With the updated configuration, it's time to run the same queries again and what the responses.
+With the updated configuration, it's time to run the same queries again and see what the responses.
 
 
 ## What's next?
