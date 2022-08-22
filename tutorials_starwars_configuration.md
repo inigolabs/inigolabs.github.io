@@ -7,7 +7,7 @@ nav_order: 2
 
 # Tutorial: Starwars Demo Configuration
 
-## Download Access file
+## Download Access files
 
 To be able to apply your own setting, download the [Starwars default configuration](/assets/files/starwars_default_config.zip).
 
