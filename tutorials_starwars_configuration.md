@@ -30,23 +30,21 @@ Next, let's start experimenting with some of Inigo's security enforcement capabi
 ## Install CLI
 
 Get the Inigo CLI tool:
-```console
+```shell
 brew tap inigolabs/homebrew-tap
-```
-Following by:
-```console
 brew install inigo_cli
 ```
+Other installation [options](/cli.html])
 
 ## Login
 Using the same credentials from <a href="https://app.inigo.io" target="_blank">app.inigo.io</a>
-```console
+```shell
 inigo login
 ```
 
 ## Apply Configuration
 Apply new configuration to the Starwars service
-```console
+```shell
 inigo apply *.yml
 ```
 
