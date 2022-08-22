@@ -22,7 +22,7 @@ The Starward Demo Playground comes prefilled with sample queries to get a feelin
 ## Prefilled Queries to Test
 
 ### missingOperationsName
-By default, all queries must have an operation name. See what happens when it doesn't.
+By default, all queries must have an operation name. See what happens when they don't.
 
 ```
 query {
@@ -116,6 +116,6 @@ query hitMaxCredits {
 
 ## What's Next
 
-Let's walk through the steps to apply some different configurations.
+Let's walk through the steps to apply our own configurations to the Starwars server - [Starwars Demo Configuration](/tutorials_starwars_configuration.html).
 
 
