@@ -37,7 +37,7 @@ Following by:
 ```
 
 ## Login
-Using the same credentials from [app.inigo.io](https://app.inigo.io)
+Using the same credentials from <a href="https://app.inigo.io" target="_blank">app.inigo.io</a>
 ```console
 > inigo login
 ```
@@ -49,7 +49,7 @@ Apply new configuration to the Starwars service
 ```
 
 ## Replay Playground Queries
-With the updated configuration, it's time to run the same queries again, see what the responses and visit [Inigo analytics console](https://app.inigo.io).
+With the updated configuration, it's time to run the same queries again, see what the responses and visit <a href="https://app.inigo.io" target="_blank">Inigo analytics console</a>. 
 
 
 ## What's next?
