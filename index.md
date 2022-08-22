@@ -16,7 +16,9 @@ If you're here, you've probably signed up for an account at <a href="https://app
 
 Inigo's powerful engine can enforce policies, alter and block incoming queries before they hit your GraphQL application servers.
 
-<img src="/assets/images/deployment.png" alt="Deployment" width="400"/>
+<p align="center">
+    <img src="/assets/images/deployment.png" alt="Deployment" width="400"/>
+</p>
 
 ## Why protect your GraphQL API with Inigo
 Unprotected GraphQL APIs can be vulnerable to a variety of security concerns, such as:
