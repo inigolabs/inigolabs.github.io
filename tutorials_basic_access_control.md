@@ -16,7 +16,7 @@ Specific Indigo features that this tutorial covers include the following.
 | Object | Data |
 | --- | --- |
 | Useful commands | `inigo apply configs/access.yml`|
-| Useful URLs | `https://dev.inigo.io` (developer dashboard)<br>`https://dev.inigo.io/schema_view` (schema explorer) |
+| Useful URLs | `https://app.inigo.io` (developer dashboard)<br>`https://app.inigo.io/schema_view` (schema explorer) |
 | Configuration files | `access.yml` (maps roles to access control configuration files)<br>`access/viewer.inigo` (configuration file for the `viewer` role) |  
 | Configuration items | `config_files` | 
  
