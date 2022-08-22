@@ -116,6 +116,6 @@ query hitMaxCredits {
 
 ## What's Next
 
-Let's walk through the steps to apply some different configurations.
+Let's walk through the steps to apply our own configurations to the Starwars server - [Starwars Demo Configuration].
 
 
