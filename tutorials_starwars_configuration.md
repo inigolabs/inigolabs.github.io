@@ -23,7 +23,7 @@ To be able to apply your own setting, download the [Starwars default configurati
 1. Change credits_per_minute to 50000
 
 ### access/viewer.yml
-1. Add 'id to filmes
+1. Add 'id' to filmes
 
 ## Install CLI
 
