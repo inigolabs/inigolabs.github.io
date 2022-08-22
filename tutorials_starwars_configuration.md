@@ -55,4 +55,6 @@ With the updated configuration, it's time to run the same queries again, see wha
 
 
 ## What's next?
-Contact us to add your own GraphQL server to Inigo.
+<a href="https://slack.inigo.io" target="_blank">Contact us</a> to add your own GraphQL server to Inigo.
+
+
