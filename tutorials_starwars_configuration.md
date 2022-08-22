@@ -9,55 +9,50 @@ nav_order: 2
 
 ## Download Access files
 
-To be able to apply your own setting, download the [Starwars default configuration](/assets/files/starwars_default_config.zip).
+To be able to apply your own setting, download the [Star Wars default configuration](/assets/files/starwars_default_config.zip).
 
-## Apply changes
+Next, let's start experimenting with some of Inigo's security enforcement capabilities by modifying and applying the following changes.
+
+## Configuration Changes
 
 ### security.yml:
-1. Change require_operation_name from true to false
-2. Change max_depth from 3 to 4
-3. Change max_height from 9 to 14
-4. Change max_directives from 5 to 30
+1. Change `require_operation_name` from `true` to `false`
+2. Change `max_depth` from `3` to `4`
+3. Change `max_height` from `9` to `14`
+4. Change `max_directives` from `5` to `30`
 
 ### rate_limit.yml:
-1. Change credits_per_minute to 50000
+1. Change `credits_per_minute` to `50000`
 
-### access/viewer.yml
-1. Add 'id' to filmes
+### access/viewer.inigo
+1. Remove the `title` field from `films`
 
 ## Install CLI
 
 Get the Inigo CLI tool:
 ```console
-> brew tap inigolabs/homebrew-tap
+brew tap inigolabs/homebrew-tap
 ```
 Following by:
 ```console
-> brew install inigo_cli
+brew install inigo_cli
 ```
 
 ## Login
 Using the same credentials from <a href="https://app.inigo.io" target="_blank">app.inigo.io</a>
 ```console
-> inigo login
+inigo login
 ```
 
-## Apply Configuration 
+## Apply Configuration
 Apply new configuration to the Starwars service
 ```console
-> inigo apply *.yml
+inigo apply *.yml
 ```
 
 ## Replay Playground Queries
-With the updated configuration, it's time to run the same queries again, see what the responses and visit <a href="https://app.inigo.io" target="_blank">Inigo analytics console</a>. 
+With the updated configuration, it's time to run the same queries again, see what the responses and visit <a href="https://app.inigo.io" target="_blank">Inigo Analytics Console</a>.
 
 
 ## What's next?
 Contact us to add your own GraphQL server to Inigo.
-
-
-
-
-
-
-

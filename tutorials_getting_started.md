@@ -1,6 +1,6 @@
 ---
-title: 
-parent: 
+title:
+parent:
 has_children: false
 nav_exclude: true
 search_exclude: true
@@ -16,9 +16,9 @@ Specific Inigo features that this tutorial covers include the following.
 | Object | Data |
 | --- | --- |
 | Useful commands | `inigo create service --init --label starwars demo`<br>`inigo get services`<br>`inigo apply configs/service.yml`|
-| Configuration files | `service.yml` (contains operation name) |  
-| Configuration items | `require_operation_name` | 
- 
+| Configuration files | `service.yml` (contains operation name) |
+| Configuration items | `require_operation_name` |
+
 ## Introduction
 
 Welcome to the Inigo platform!
@@ -68,22 +68,22 @@ To use this tutorial, you must have:
     ````
     This should show the service you just created above:
     ````
-    NAME      LABEL      PROFILES  INSTANCES  STATUS  
-    ----      -----      --------  ---------  ------  
-    demo      starwars   0         1          Running  
+    NAME      LABEL      PROFILES  INSTANCES  STATUS
+    ----      -----      --------  ---------  ------
+    demo      starwars   0         1          Running
     ````
 
 ### 3. Configure the new service to require named operations
 1. Open the `starwars/configs/service.yml` file in the examples project using a text editor.
-2. Find the `guest` profile section by searching for:  
+2. Find the `guest` profile section by searching for:
 ``  - name: guest``
-    > **NOTE**: This tutorial configures only the `guest` profile. For most real-world use cases, you would configure this setting for every profile in `service.yml`. 
-3. Within that profile section, find the line beginning with:  
+    > **NOTE**: This tutorial configures only the `guest` profile. For most real-world use cases, you would configure this setting for every profile in `service.yml`.
+3. Within that profile section, find the line beginning with:
 ``    require_operation_name: ``
 4. If the value of this setting is already `true`, your configuration is already set to require named operations. Go to step 5 to ensure that the configuration has been pushed up to Inigo. Otherwise, if the value is `false`, change the line to read:
-``    require_operation_name: true``  
-5. Save the file.  
-6. Update the configuration on the Inigo Labs server, by running the following command line from the `starwars` directory:  
+``    require_operation_name: true``
+5. Save the file.
+6. Update the configuration on the Inigo Labs server, by running the following command line from the `starwars` directory:
     ```
     inigo apply configs/service.yml
     ```
@@ -91,31 +91,31 @@ To use this tutorial, you must have:
 ### 4. Verify the change
 1. Open a browser window to the GraphQL playground at https://app.inigo.io/starwars/playground
     > **NOTE:** Verify that the URL text box within the playground window contains `https://app.inigo.io/starwars/query`. If it does not, paste that URL into the text box.
-2. Copy the following text that defines an unnamed query into the edit (left) pane:  
+2. Copy the following text that defines an unnamed query into the edit (left) pane:
     ```graphql
-    query {  
-      films {  
-        title  
-      }  
+    query {
+      films {
+        title
+      }
     }
     ```
-3. Click the arrow icon between the panes, to execute that operation.  
-4. Verify that you see a response like: 
+3. Click the arrow icon between the panes, to execute that operation.
+4. Verify that you see a response like:
     ```graphql
     {
-      "data": null,  
-          "extensions": {},  
-          "errors": [  
-            {  
-              "message": "nameless operations are not  allowed"  
-            }  
-          ]  
+      "data": null,
+          "extensions": {},
+          "errors": [
+            {
+              "message": "nameless operations are not  allowed"
+            }
+          ]
       }
-    ```  
+    ```
 
       > **NOTE:** If you see a list of films, named operations are not yet required. Go back through [Steps](#steps) 1-6 of the tutorial and verify that you've performed all the steps.
 
-5. Return to the edit window and replace the line: 
+5. Return to the edit window and replace the line:
     ```
     query {
     ```
