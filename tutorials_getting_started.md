@@ -1,6 +1,6 @@
 ---
 title: 
-parent: Tutorials
+parent: 
 has_children: false
 nav_exclude: true
 search_exclude: true
