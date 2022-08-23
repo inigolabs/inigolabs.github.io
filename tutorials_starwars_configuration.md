@@ -38,21 +38,21 @@ Other installation [options](/cli.html])
 
 ## Login
 Using the same credentials from <a href="https://app.inigo.io" target="_blank">app.inigo.io</a>. If you signed up with **GitHub**, run the following command:
-```console
+```shell
 inigo login github
 ```
 alternatively, if you signed up with **Google**, run the following command:
-```console
+```shell
 inigo login google
 ````
 Otherwise if you signed up with a regular email, use the following command:
-```console
+```shell
 inigo login
 ```
 
 ## Apply Configuration
 Apply new configuration to the Star Wars service
-```console
+```shell
 inigo apply *.yml
 ```
 
