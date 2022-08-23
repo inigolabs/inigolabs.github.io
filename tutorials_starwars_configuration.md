@@ -30,20 +30,18 @@ Next, let's start experimenting with some of Inigo's security enforcement capabi
 ## Install CLI
 
 Get the Inigo CLI tool:
-```console
+```shell
 brew tap inigolabs/homebrew-tap
-```
-Following by:
-```console
 brew install inigo_cli
 ```
+Other installation [options](/cli.html])
 
 ## Login
-Using the same credentials from <a href="https://app.inigo.io" target="_blank">app.inigo.io</a>. If you signed up with GitHub, run the following command:
+Using the same credentials from <a href="https://app.inigo.io" target="_blank">app.inigo.io</a>. If you signed up with **GitHub**, run the following command:
 ```console
 inigo login github
 ```
-alternatively, if you signed up with Google, run the following command:
+alternatively, if you signed up with **Google**, run the following command:
 ```console
 inigo login google
 ````
