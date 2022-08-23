@@ -1,11 +1,11 @@
 ---
-title: Starwars Demo Configuration
+title: Star Wars Demo Configuration
 parent: Tutorials
 has_children: false
 nav_order: 2
 ---
 
-# Tutorial: Starwars Demo Configuration
+# Tutorial: Star Wars Demo Configuration
 
 ## Download Access files
 
@@ -37,14 +37,22 @@ brew install inigo_cli
 Other installation [options](/cli.html])
 
 ## Login
-Using the same credentials from <a href="https://app.inigo.io" target="_blank">app.inigo.io</a>
-```shell
+Using the same credentials from <a href="https://app.inigo.io" target="_blank">app.inigo.io</a>. If you signed up with **GitHub**, run the following command:
+```console
+inigo login github
+```
+alternatively, if you signed up with **Google**, run the following command:
+```console
+inigo login google
+````
+Otherwise if you signed up with a regular email, use the following command:
+```console
 inigo login
 ```
 
 ## Apply Configuration
-Apply new configuration to the Starwars service
-```shell
+Apply new configuration to the Star Wars service
+```console
 inigo apply *.yml
 ```
 
