@@ -30,7 +30,7 @@ Unprotected GraphQL APIs can be vulnerable to a variety of security concerns, su
 
 ... and many more.
 
-Inigo solves complex security challenges by providing a comprehensive layer of enforcement, decoupling complex logic from your application in a performant way without impacting your business.
+Inigo solves these complex security challenges by providing a comprehensive layer of enforcement, analytics and insights, all while decoupling the complex security logic from your application in a performant way that allows your business to focus on its highest priorities.
 
 ## Getting Started
 The first step in the process is to explore the [Star Wars Demo Playground](/tutorials_starwars_playground.html). The Star Wars API (also known as SWAPI) mimics the application that's protected by Inigo - in this case, your application. Once you get the hang of it, you can then apply your own [configuration](/tutorials_starwars_configuration.html). Configurations can be as strict as you want them to be and Inigo provides a comprehensive set of controls how tight the controls should be.

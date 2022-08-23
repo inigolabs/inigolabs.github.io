@@ -1,11 +1,11 @@
 ---
-title: Starwars Demo Playground
+title: Star Wars Demo Playground
 parent: Tutorials
 has_children: false
 nav_order: 1
 ---
 
-# Tutorial: Starwars Demo Configuration
+# Tutorial: Star Wars Demo Configuration
 
 ## What is it?
 

@@ -3,6 +3,8 @@ title: inigo
 parent: CLI
 has_children: false
 nav_order: 1
+nav_exclude: true
+search_exclude: true
 ---
 
 # inigo
