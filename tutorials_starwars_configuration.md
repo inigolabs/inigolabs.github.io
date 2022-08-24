@@ -34,7 +34,6 @@ Get the Inigo CLI tool:
 brew tap inigolabs/homebrew-tap
 brew install inigo_cli
 ```
-Other installation [options](/cli.html])
 
 ## Login
 Using the same credentials from <a href="https://app.inigo.io" target="_blank">app.inigo.io</a>. If you signed up with **GitHub**, run the following command:
