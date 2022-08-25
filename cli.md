@@ -22,13 +22,13 @@ brew install inigo_cli
 
 
 ### Commands
-- [inigo login](/cli_login.html)
-- [inigo logout](/cli_logout.html)
-- [inigo apply](/cli_apply.html)
-- [inigo create](/cli_create.html)
-- [inigo delete](/cli_delete.html)
-- [inigo get](/cli_get.html)
-- [inigo check](/cli_check.html)
+- [inigo login](/cli_inigo_login.html)
+- [inigo logout](/cli_inigo_logout.html)
+- [inigo apply](/cli_inigo_apply.html)
+- [inigo create](/cli_inigo_create.html)
+- [inigo delete](/cli_inigo_delete.html)
+- [inigo get](/cli_inigo_get.html)
+- [inigo check](/cli_inigo_check.html)
 
 ### Support
 - Join our [slack](https://slack.inigo.io)

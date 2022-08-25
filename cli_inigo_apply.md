@@ -54,7 +54,6 @@ starwars/rate_limit/profiles/user updated
 
 ### See also
 - [inigo get](/cli_inigo_get.html)
-
 - [inigo create](/cli_inigo_create.html)
 
 

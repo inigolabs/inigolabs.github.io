@@ -34,3 +34,6 @@ password: ****
 login successful
 >
 ```
+
+### See also
+- [inigo login](/cli_inigo_login.html)
