@@ -15,16 +15,13 @@ The default authentication mode is via email and password.
 Google and GitHub sso authentications are also available.
 
 ### Commands
-- inigo login
-   
-	Enter the username and password when prompted.
-   
-- inigo login google  
+- inigo login  
+&nbsp;&nbsp;&nbsp;Enter the username and password when prompted.
+- inigo login google    
+&nbsp;&nbsp;&nbsp;Login using your google account. A web browser window will open to complete the sign in using google.
 
-   Login using your google account. A web browser window will open to complete the sign in using google.
-
-- inigo login github
-	Login using your github account. A web browser window will open to complete the sign in using github.
+- inigo login github  
+&nbsp;&nbsp;&nbsp;Login using your github account. A web browser window will open to complete the sign in using github.
 
 ### Examples
 ```
@@ -32,8 +29,13 @@ Google and GitHub sso authentications are also available.
 username: bob@graphql.com
 password: ****
 login successful
->
+
+> inigo login google
+login successful
+
+> inigo login github
+login successful
 ```
 
 ### See also
-- [inigo login](/cli_inigo_login.html)
+- [inigo logout](/cli_inigo_logout.html)

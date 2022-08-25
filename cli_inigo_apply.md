@@ -14,6 +14,19 @@ Configuration yaml files can be passed in individually or using a glob to apply 
 inigo apply <yaml_config_filenames>  
 ```
 
+### Options
+`--wait`  
+&nbsp;&nbsp;&nbsp;wait for configuration to be applied to service instance 
+
+`--wait-for <number_of_instances>`  
+&nbsp;&nbsp;&nbsp;wait for particular number of instances to become updated (default: 0)
+
+`--label`  
+&nbsp;&nbsp;&nbsp;apply configuration to service with a particular label
+
+`--timeout <seconds>`  
+&nbsp;&nbsp;&nbsp;if provided cancels the apply wait when it exceeds the timeout value
+
 ### Examples
 ```
 > inigo apply configs/service.yml
@@ -37,20 +50,6 @@ starwars/security/profiles/anonymous removed
 starwars/rate_limit/profiles/admin updated
 starwars/rate_limit/profiles/user updated
 ```
-
-### Options
-`--wait`  
-&nbsp;&nbsp;&nbsp;wait for configuration to be applied to service instance 
-
-`--wait-for <number_of_instances>`  
-&nbsp;&nbsp;&nbsp;wait for particular number of instances to become updated (default: 0)
-
-`--label`  
-&nbsp;&nbsp;&nbsp;apply configuration to service with a particular label
-
-`--timeout <seconds>`  
-&nbsp;&nbsp;&nbsp;if provided cancels the apply wait when it exceeds the timeout value
-
 
 ### See also
 - [inigo get](/cli_inigo_get.html)
