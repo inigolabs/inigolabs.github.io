@@ -1,6 +1,6 @@
 ---
-title: inigo apply
-parent: CLI
+title: "inigo apply"
+parent: "CLI"
 has_children: false
 nav_order: 4
 ---
