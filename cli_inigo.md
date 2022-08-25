@@ -3,13 +3,12 @@ title: inigo
 parent: CLI
 has_children: false
 nav_order: 1
-nav_exclude: true
-search_exclude: true
 ---
 
-# inigo
+## inigo
+---
 
-## Commands
+### Commands
 - [inigo login](/cli_login.html)
 - [inigo logout](/cli_logout.html)
 - [inigo apply](/cli_apply.html)
@@ -18,9 +17,8 @@ search_exclude: true
 - [inigo get](/cli_get.html)
 - [inigo check](/cli_check.html)
 
-## Options
-
-- `--debug`
-	- show verbose debug information
-- `--version`
-	- show version info
+### Options
+`--debug`  
+show verbose debug information  
+`--version`  
+show version info  
