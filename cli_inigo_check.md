@@ -1,6 +1,6 @@
 ---
-title: "inigo check"
-parent: "CLI"
+title: inigo check
+parent: CLI
 has_children: true
 nav_order: 8
 ---
