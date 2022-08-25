@@ -1,6 +1,6 @@
 ---
-title: inigo check access
-parent: inigo check
+title: "inigo check access"
+parent: "inigo check"
 has_children: false
 nav_order: 2
 ---

@@ -1,6 +1,6 @@
 ---
-title: inigo check schema
-parent: inigo check
+title: "inigo check schema"
+parent: "inigo check"
 has_children: false
 nav_order: 1
 ---
