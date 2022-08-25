@@ -1,10 +1,13 @@
 ---
 title: inigo check
 parent: CLI
-has_children: false
+has_children: true
 nav_order: 8
-nav_exclude: true
-search_exclude: true
 ---
 
-# inigo check
+## inigo check
+---
+
+### Commands
+- [inigo check access](/cli_inigo_check_access.html)
+- [inigo check schema](/cli_inigo_check_schema.html)
