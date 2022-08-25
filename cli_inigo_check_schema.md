@@ -1,6 +1,7 @@
 ---
-title: "inigo check schema"
-parent: "inigo check"
+title: inigo check schema
+parent: inigo check
+grand_parent: CLI
 has_children: false
 nav_order: 1
 ---
