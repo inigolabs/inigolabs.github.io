@@ -1,4 +1,4 @@
-<link rel="shortcut icon" type="image/png" href="inigo.png?">
+<link rel="shortcut icon" type="image/png" href="favicon.ico?">
 
 ---
 title: Introduction
