@@ -4,7 +4,7 @@ has_children: false
 nav_order: 1
 ---
 
-<link rel="shortcut icon" type="image/png" href="inigo-docs.png?">
+<link rel="shortcut icon" type="image/png" href="favicon.ico?">
 
 ## Introduction
 
