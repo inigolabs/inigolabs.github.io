@@ -1,3 +1,5 @@
+<link rel="shortcut icon" type="image/png" href="inigo.png?">
+
 ---
 title: Introduction
 has_children: false
