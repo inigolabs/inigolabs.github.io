@@ -1,10 +1,10 @@
-<link rel="shortcut icon" type="image/png" href="favicon.ico?">
-
 ---
 title: Introduction
 has_children: false
 nav_order: 1
 ---
+
+<link rel="shortcut icon" type="image/png" href="favicon.ico?">
 
 ## Introduction
 
