@@ -23,6 +23,7 @@ query {
 ```schema.graphql
 directive @access(
 	role: [String] = ["allowed role"]
+	depth: Int
 ) on FIELD_DEFINITION
 ```
 
@@ -59,4 +60,6 @@ query {
 
 ## Important notes:
 * A valid role has to be created before using it with `@access` directive
+* Use `depth` parameter for the directive `@access` to restrict access to a certain depth. 
+If depth parameter is omitted then the access will be provided for the whole depth of underlying query.
 * After updating service schema always re-apply your service config for changes to take place.
