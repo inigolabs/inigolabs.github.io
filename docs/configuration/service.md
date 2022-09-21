@@ -13,7 +13,7 @@ layout: page
   - [Daemon (sidecar) Settings](#daemon-sidecar-settings)
 
 # Service
-Service configuration allows Inigo's users to apply fine-grianed authorization and access controls. Not all clients are the same; you may have authenticated and unauthenticated clients using your application. Using the access control capabilities of inigo, you can enforce strong authorization controls depending on the context of your clients.
+Service configuration allows Inigo's users to apply fine-grianed authorization and access controls. Not all clients are the same; you may have authenticated and unauthenticated clients using your application. Using the access control capabilities of Inigo, you can enforce strong authorization controls depending on the context of your clients.
 
 ---
 

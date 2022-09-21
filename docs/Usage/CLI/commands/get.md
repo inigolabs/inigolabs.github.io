@@ -74,7 +74,7 @@ Configurations:
 
 
 $ inigo get service --json
-  --snip--
+  ...
   [
     {
         "Id": 3210674112131072,
@@ -96,7 +96,7 @@ $ inigo get service --json
         }
         ]
     }
-  --snip--
+  ...
   ]
 ```
 
@@ -127,7 +127,7 @@ ID  SERVICE  TOTAL  BLOCKED  MODIFIED  ERROR  UPDATED
 
 $ inigo get instance --json
 
-  --snip--
+  ...
   [
     {
         "Id": 3210674112131072,
@@ -149,7 +149,7 @@ $ inigo get instance --json
         }
         ]
     },
-  --snip--
+  ...
   ]
 ```
 

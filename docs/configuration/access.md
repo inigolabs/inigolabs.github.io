@@ -14,7 +14,7 @@ layout: page
   - [Profile Default Values](#profile-default-values)
 
 # Access
-Access configuration allows Inigo's users to apply fine-grained authorization and access controls. Not all clients are the same; you may have authenticated and unauthenticated clients using your application. Using the access control capabilities of inigo, you can enforce strong authorization controls depending on the context of your clients.
+Access configuration allows Inigo's users to apply fine-grained authorization and access controls. Not all clients are the same; you may have authenticated and unauthenticated clients using your application. Using the access control capabilities of Inigo, you can enforce strong authorization controls depending on the context of your clients.
 
 ---
 
@@ -87,7 +87,8 @@ type Person {
 }
 ```
 
-The allowed operations (`allowed_operations`) file is as follows:
+
+The allowed operations (`allowed_operations`) file `access/viewer.graphql` is as follows:
 ```
 query Planets {
   planets {

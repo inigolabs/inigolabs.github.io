@@ -26,12 +26,12 @@ This section defines the format of Inigo's `RateLimit` type configuration files.
 | `profiles[_].name` | `string` | Yes | The name of the profile. |
 | `profiles[_].header_output` | `boolean` | No (default: `false`) | Adds rate limit-related information to the HTTP response header. Rate limit-related headers will be prefixed with `X-RateLimit...`. |
 | `profiles[_].extension_output` | `boolean` | No (default: `false`) | Adds rate limit-related information to the `extensions` response JSON key named `rate_limiter`. |
-| `profiles[_].calls_per_minute` | `int` | No | Number of queries allowed per minute. By default, there are no query limits per minute. |
-| `profiles[_].calls_per_hour` | `int` | No | Number of queries allowed per hour. By default, there are no query limits per hour. |
-| `profiles[_].credits_per_minute` | `int` | No | Credit allowance per minute. By default, there is no credit allowance limit per minute. |
-| `profiles[_].credits_per_hour` | `int` | No | Credit allowance per hour. By default, there is no credit allowance limit per hour. |
-| `profiles[_].credits_per_type` | `object` | No | Credits spent when a GraphQL type is used in a query. For example: `Film`:`2`. By default, there is no credit allowance limit per type. |
-| `profiles[_].credits_per_root_field` | `object` | No | Credits spent when a GraphQL root field is used in a query. For example: `login`:`15`. You can use `credits_per_root_field` to override rate limiting such that specific fields are not rate limited by setting the field to zero (`0`). By default, there one `1` credit is used per queried field |
+| `profiles[_].calls_per_minute` | `int` (default: unlimited) | No | Number of queries allowed per minute. |
+| `profiles[_].calls_per_hour` | `int` | No (default: unlimited) | Number of queries allowed per hour. |
+| `profiles[_].credits_per_minute` | `int` | No (default: unlimited) | Credit allowance per minute. |
+| `profiles[_].credits_per_hour` | `int` | No (default: unlimited) | Credit allowance per hour. |
+| `profiles[_].credits_per_type` | `object` | No (default: unlimited) | Credits spent when a GraphQL type is used in a query. For example: `Film`:`2`. |
+| `profiles[_].credits_per_root_field` | `object` | No (default: `1`) | Credits spent when a GraphQL root field is used in a query. For example: `login`:`15`. You can use `credits_per_root_field` to override rate limiting such that specific fields are not rate limited by setting the field to zero (`0`). |
 
 The rate limit configuration below shows how to apply a configuration to multiple profiles, such as **guest**, **user** and **admin**.
 
@@ -40,13 +40,15 @@ kind: RateLimit
 name: demo
 label: starwars
 spec:
+  profile_default_values:
+    calls_per_minute: 10
+    credits_per_minute: 1000
+
   profiles:
   - name: guest
     header_output: true
     extension_output: true
-    calls_per_minute: 200
     calls_per_hour: 100000
-    credits_per_minute: 600
     credits_per_hour: 100000
     credits_per_root_field:
       login: 15
@@ -70,16 +72,3 @@ All toggles from the [Profiles](#profiles) section can be applied using a defaul
 | Field | Type | Required | Description
 | ---  | :---: | --- | --- |
 | `profile_default_values` | `object` | No | Default rate limit profile configuration settings. |
-
-
-```
-kind: RateLimit
-name: demo
-label: starwars
-spec:
-  profile_default_values:
-    --snip--
-    calls_per_minute: 10
-    credits_per_minute: 1000
-    --snip--
-```
