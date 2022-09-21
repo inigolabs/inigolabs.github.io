@@ -2,3 +2,20 @@ title: "Inigo Docs"
 remote_theme: just-the-docs/just-the-docs
 color_scheme: "light"
 search_enabled: true
+description: >-
+  The GraphQL Security Enforcement and Management layer for your GraphQL APIs.
+baseurl: ""
+url: "https://docs.inigo.io"
+
+# Build settings
+theme: just-the-docs
+plugins:
+  - jekyll-feed
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
