@@ -1,18 +1,19 @@
 ---
-title: Introduction
+title: Overview
 has_children: false
+layout: page
 nav_order: 1
 ---
 
-<link rel="shortcut icon" type="image/png" href="favicon.ico?">
-
-## Introduction
+<link rel="shortcut icon" type="image/png" href="favicon.ico">
 
 <p align="center">
-  <img src="/assets/images/logo.svg" alt="Logo" width="100"/>
+  <img src="/assets/images/logo.svg" alt="Logo" width="250"/>
 </p>
 
-Welcome to <a href="https://inigo.io" target="_blank">Inigo</a>. The GraphQL Security Enforcement and Management layer for your GraphQL APIs.
+
+## Overview
+Welcome to <a href="https://inigo.io" target="_blank">Inigo</a> - the GraphQL Security Enforcement and Management layer for your GraphQL APIs. We provide a server-agnostic management, security and observability solution layer for any GraphQL server.
 
 If you're here, you've probably signed up for an account at <a href="https://app.inigo.io" target="_blank">app.inigo.io</a> and are ready to start exploring how Inigo helps you manage and protect GraphQL APIs from malicious actors.
 
@@ -44,5 +45,6 @@ Let's start:
 2. [Starwars Demo Configuration](/tutorials_starwars_configuration.html)
 
 For any questions, join our <a href="https://slack.inigo.io" target="_blank">Slack channel</a>.
+
 
 
