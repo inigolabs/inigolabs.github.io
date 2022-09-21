@@ -29,8 +29,8 @@ kind: Security
 name: demo
 label: starwars
 spec:
-  --snip--
+  ...
   validation:
     alias_name: "^[a-zA-Z]+$"
-  --snip--
+  ...
 ```
