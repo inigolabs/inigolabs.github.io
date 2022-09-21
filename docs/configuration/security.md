@@ -62,6 +62,9 @@ spec:
     arguments:
       string: ^[a-zA-Z]+$
 
+  profile_default_values:
+    max_depth: 3
+
   profiles:
     - name: guest
       max_depth: 3
@@ -95,15 +98,3 @@ All toggles from the [Profiles](#profiles) section can be applied using a defaul
 | Field | Type | Required | Description
 | ---  | :---: | --- | --- |
 | `profile_default_values` | `object` | No | Default security profile configuration settings. |
-
-```
-kind: Security
-name: demo
-label: starwars
-spec:
-  profile_default_values:
-    ...
-    require_id_fields: false
-    require_operation_name: true
-    ...
-```

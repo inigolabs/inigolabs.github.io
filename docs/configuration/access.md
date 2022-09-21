@@ -43,6 +43,9 @@ kind: Access
 name: demo
 label: starwars
 spec:
+  profile_default_values:
+    introspection_mode: block
+
   roles:
     - name: viewer
       config_files:
