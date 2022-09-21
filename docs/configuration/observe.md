@@ -15,7 +15,7 @@ layout: page
   - [Profile Default Values](#profile-default-values)
 
 # Observe
-Observe allows inigo's users to perform inspection of queries and annotate certain parts of it depending on the configuration you set. For example, you may use Observe to mark/flag fields used in a query depending on the types of directives are applied to them in your GraphQL schema.
+Observe allows Inigo's users to perform inspection of queries and annotate certain parts of it depending on the configuration you set. For example, you may use Observe to mark/flag fields used in a query depending on the types of directives are applied to them in your GraphQL schema.
 
 ---
 
@@ -75,6 +75,9 @@ kind: Observe
 name: demo
 label: starwars
 spec:
+  profile_default_values:
+    deprecated_extension: false
+
   profiles:
   - name: anonymous
     deprecated_extension: false
@@ -86,13 +89,3 @@ All toggles from the [Profiles](#profiles) section can be applied using a defaul
 | Field | Type | Required | Description
 | ---  | :---: | --- | --- |
 | `profile_default_values` | `object` | No | Default observe profile configuration settings. |
-
-
-```
-kind: Observe
-name: demo
-label: starwars
-spec:
-  profile_default_values:
-    deprecated_extension: false
-```
