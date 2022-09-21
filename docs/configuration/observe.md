@@ -44,9 +44,9 @@ spec:
 
 | Field | Type | Required | Description
 | ---  | :---: | --- | --- |
-| `directive_tags` | `array` | No | List of GraphQL Directives inigo searches for to flag use of deprecated fields |
+| `directive_tags` | `array` | No | List of GraphQL Directives Inigo searches for to flag use of deprecated fields |
 
-In the example below, inigo will signal in the response that a deprecated field `Film.director` was used in the query if the corresponding schema includes the `deprecated` directive in the `director` field. This functionality is not limited to field deprecation, any directive string can be used in the context of your application. For example, using security-related directives such as `pii` or `internal` could also work.
+In the example below, Inigo will signal in the response that a deprecated field `Film.director` was used in the query if the corresponding schema includes the `deprecated` directive in the `director` field. This functionality is not limited to field deprecation, any directive string can be used in the context of your application. For example, using security-related directives such as `pii` or `internal` could also work.
 
 ```
 kind: Observe
