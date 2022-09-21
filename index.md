@@ -36,13 +36,13 @@ Unprotected GraphQL APIs can be vulnerable to a variety of security concerns, su
 Inigo solves these complex security challenges by providing a comprehensive layer of enforcement, analytics and insights, all while decoupling the complex security logic from your application in a performant way that allows your business to focus on its highest priorities.
 
 ## Getting Started
-The first step in the process is to explore the [Star Wars Demo Playground](/tutorials_starwars_playground.html). The Star Wars API (also known as SWAPI) mimics the application that's protected by Inigo - in this case, your application. Once you get the hang of it, you can then apply your own [configuration](/tutorials_starwars_configuration.html). Configurations can be as strict as you want them to be and Inigo provides a comprehensive set of controls how tight the controls should be.
+The first step in the process is to explore the [Star Wars Demo Playground](docs/Tutorials/tutorials_starwars_playground.htm). The Star Wars API (also known as SWAPI) mimics the application that's protected by Inigo - in this case, your application. Once you get the hang of it, you can then apply your own [configuration](/docs/configuration.md). Configurations can be as strict as you want them to be and Inigo provides a comprehensive set of controls how tight the controls should be.
 
 After exploring the demo playground and applying the sample configuration as provided by Inigo, you will get an idea how Inigo works. At which point you can then add your own service and apply your own server configuration.
 
 Let's start:
-1. [Starwars Demo Playground](/tutorials_starwars_playground.html)
-2. [Starwars Demo Configuration](/tutorials_starwars_configuration.html)
+1. [Starwars Demo Playground](/docs/Tutorials/tutorials_starwars_playground.html)
+2. [Starwars Demo Configuration](/docs/Tutorials/tutorials_starwars_configuration.md)
 
 For any questions, join our <a href="https://slack.inigo.io" target="_blank">Slack channel</a>.
 
