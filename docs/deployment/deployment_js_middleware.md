@@ -1,7 +1,6 @@
 ---
 title: Middleware
 parent: Deployment
-grand_parent: Installation
 has_children: false
 nav_order: 3
 layout: page

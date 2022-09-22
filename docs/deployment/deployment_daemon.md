@@ -1,7 +1,6 @@
 ---
 title: Daemon
 parent: Deployment
-grand_parent: Installation
 has_children: false
 nav_order: 1
 layout: page
@@ -9,13 +8,9 @@ layout: page
 
 # Table of Contents
 - [Table of Contents](#table-of-contents)
-- [Installation](#installation)
   - [Linux](#linux)
   - [MacOS](#macos)
   - [Windows](#windows)
-
-# Installation
-Inigo can be deployed as a daemon on servers.
 
 ## Linux
 Download the inigo daemon Linux binary from: [Link](https://inigo.io)
