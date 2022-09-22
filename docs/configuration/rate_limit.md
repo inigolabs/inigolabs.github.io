@@ -26,7 +26,7 @@ This section defines the format of Inigo's `RateLimit` type configuration files.
 | `profiles[_].name` | `string` | Yes | The name of the profile. |
 | `profiles[_].header_output` | `boolean` | No (default: `false`) | Adds rate limit-related information to the HTTP response header. Rate limit-related headers will be prefixed with `X-RateLimit...`. |
 | `profiles[_].extension_output` | `boolean` | No (default: `false`) | Adds rate limit-related information to the `extensions` response JSON key named `rate_limiter`. |
-| `profiles[_].calls_per_minute` | `int` (default: unlimited) | No | Number of queries allowed per minute. |
+| `profiles[_].calls_per_minute` | `int` | No (default: unlimited) | Number of queries allowed per minute. |
 | `profiles[_].calls_per_hour` | `int` | No (default: unlimited) | Number of queries allowed per hour. |
 | `profiles[_].credits_per_minute` | `int` | No (default: unlimited) | Credit allowance per minute. |
 | `profiles[_].credits_per_hour` | `int` | No (default: unlimited) | Credit allowance per hour. |
