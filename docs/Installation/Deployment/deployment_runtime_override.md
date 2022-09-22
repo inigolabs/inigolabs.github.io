@@ -23,16 +23,11 @@ When you need to override any runtime defaults, you will export your environment
 | ---  | :---: | --- | --- | --- |
 | Log Level | `string` | No (default: `info`)| Log-level for the daemon. | `INIGO_LOG_LEVEL` |
 | Log Type | `string` | No (default: `json`)| Log-type for the daemon. | `INIGO_LOG_TYPE` |
-| Sidecar Mode | `boolean` | No (default: `true`)| Enables Sidecar mode. | `INIGO_ENABLE` |
 | Listen Port | `integer` | No (default: `80`)| TCP port to bind the daemon to. | `INIGO_LISTEN_PORT` |
 | Egress URL | `string` | Yes | URL of the proxied application (GraphQL Endpoint). | `INIGO_EGRESS_URL` |
-| Ingest URL | `string` | No | URL of Ingestment service. | `INIGO_EGRESS_URL` |
-| Service URL | `string` | No | URL of Inigo service. | `INIGO_SERVICE_URL` |
 | Service Token | `string` | Yes | JWT token credential of the service. | `INIGO_SERVICE_TOKEN` |
 | GraphQL Route | `string` | No (default: `/query`)| Endpoint route for GraphQL queries. | `INIGO_GRAPHQL_ROUTE` |
 | GraphQL Playground Route | `string` | No | Endpoint route for GraphQL IDE (GraphiQL or GraphQL Playground). | `INIGO_PLAYGROUND_ROUTE` |
-| Passthrough URL | `string` | No | Endpoint that bypasses the GraphQL route. | `INIGO_PASS_THROUGH_URL` |
-| Enable Gateway | `string` | No | Enables Gateway Mode. | `INIGO_GATEWAY_ENABLE` |
 | Sidecar JWT Secret | `string` | No | Sidecar authentication JWT secret. | `INIGO_SIDECAR_JWT_SECRET` |
 
 
