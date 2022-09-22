@@ -1,7 +1,6 @@
 ---
 title: inigo login
 parent: Command Line Interface (CLI)
-grand_parent: Usage
 has_children: false
 nav_order: 2
 layout: page

@@ -1,7 +1,6 @@
 ---
 title: Introduction
 parent: Command Line Interface (CLI)
-grand_parent: Usage
 has_children: false
 nav_order: 1
 layout: page

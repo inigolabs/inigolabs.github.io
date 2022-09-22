@@ -1,7 +1,6 @@
 ---
 title: inigo delete
 parent: Command Line Interface (CLI)
-grand_parent: Usage
 has_children: false
 nav_order: 7
 layout: page

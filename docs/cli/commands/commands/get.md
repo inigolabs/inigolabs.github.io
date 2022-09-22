@@ -1,7 +1,6 @@
 ---
 title: inigo get
 parent: Command Line Interface (CLI)
-grand_parent: Usage
 has_children: false
 nav_order: 5
 layout: page
