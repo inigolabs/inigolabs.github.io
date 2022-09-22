@@ -1,6 +1,7 @@
 ---
 title: inigo logout
-parent: Command Line Interface (CLI)
+parent: Commands
+grand_parent: Command Line Interface (CLI)
 has_children: false
 nav_order: 8
 layout: page

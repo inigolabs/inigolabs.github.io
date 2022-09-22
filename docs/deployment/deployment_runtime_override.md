@@ -1,7 +1,6 @@
 ---
 title: Overriding Runtime Configuration
 parent: Deployment
-grand_parent: Installation
 has_children: false
 nav_order: 4
 layout: page

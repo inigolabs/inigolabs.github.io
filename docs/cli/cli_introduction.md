@@ -11,12 +11,12 @@ layout: page
 The CLI is your management utility for your Inigo solution. With the CLI, you can perform actions such as creating new services, checking and applying new configurations, and more.
 
 ### Commands
-- [inigo login](/commands/login.html)
-- [inigo logout](/commands/logout.html)
-- [inigo apply](/commands/apply.html)
-- [inigo create](/commands/create.html)
-- [inigo delete](/commands/delete.html)
-- [inigo get](/commands/get.html)
+- [inigo login](commands/login.html)
+- [inigo logout](commands/logout.html)
+- [inigo apply](commands/apply.html)
+- [inigo create](commands/create.html)
+- [inigo delete](commands/delete.html)
+- [inigo get](commands/get.html)
 - [inigo check](commands/check.html)
 
 ### Optional flags
