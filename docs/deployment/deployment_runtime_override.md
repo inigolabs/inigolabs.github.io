@@ -2,7 +2,7 @@
 title: Overriding Runtime Configuration
 parent: Deployment
 has_children: false
-nav_order: 4
+nav_order: 5
 layout: page
 ---
 
@@ -18,15 +18,15 @@ When you need to override any runtime defaults, you will export your environment
 
 ## Configuration Table
 
-| Description | Type | Required | Details | Environment Variable
-| ---  | :---: | --- | --- | --- |
-| Log Level | `string` | No (default: `info`)| Log-level for the daemon. | `INIGO_LOG_LEVEL` |
-| Log Type | `string` | No (default: `json`)| Log-type for the daemon. | `INIGO_LOG_TYPE` |
-| Listen Port | `integer` | No (default: `80`)| TCP port to bind the daemon to. | `INIGO_LISTEN_PORT` |
-| Egress URL | `string` | Yes | URL of the proxied application (GraphQL Endpoint). | `INIGO_EGRESS_URL` |
-| Service Token | `string` | Yes | JWT token credential of the service. | `INIGO_SERVICE_TOKEN` |
-| GraphQL Route | `string` | No (default: `/query`)| Endpoint route for GraphQL queries. | `INIGO_GRAPHQL_ROUTE` |
-| GraphQL Playground Route | `string` | No | Endpoint route for GraphQL IDE (GraphiQL or GraphQL Playground). | `INIGO_PLAYGROUND_ROUTE` |
+| Description | Type | Required | Details | Environment Variable | YAML Config
+| ---  | :---: | --- | --- | --- | --- |
+| Log Level | `string` | No (default: `info`)| Log-level for the daemon. | `INIGO_LOG_LEVEL` | `LogLevel` |
+| Log Type | `string` | No (default: `json`)| Log-type for the daemon. | `INIGO_LOG_TYPE` | `LogType` |
+| Listen Port | `integer` | No (default: `80`)| TCP port to bind the daemon to. | `INIGO_LISTEN_PORT` | `ListenPort` |
+| Egress URL | `string` | Yes | URL of the proxied application (GraphQL Endpoint). | `INIGO_EGRESS_URL` | `EgressURL` |
+| Service Token | `string` | Yes | JWT token credential of the service. | `INIGO_SERVICE_TOKEN` | `ServiceToken` |
+| GraphQL Route | `string` | No (default: `/query`)| Endpoint route for GraphQL queries. | `INIGO_GRAPHQL_ROUTE` | `GraphQLRoute` |
+| GraphQL Playground Route | `string` | No | Endpoint route for GraphQL IDE (GraphiQL or GraphQL Playground). | `INIGO_PLAYGROUND_ROUTE` | `GraphQLPlaygroundRoute` |
 | Sidecar JWT Secret | `string` | No | Sidecar authentication JWT secret. | `INIGO_SIDECAR_JWT_SECRET` |
 
 
