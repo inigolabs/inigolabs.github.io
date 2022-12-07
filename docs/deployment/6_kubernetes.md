@@ -1,12 +1,12 @@
 ---
-title: Kubernetes
+title: Kubernetes Sidecar
 parent: Deployment
 has_children: false
 nav_order: 6
 layout: page
 ---
 
-# Kubernetes SideCar
+# Kubernetes Sidecar
 
 Prerequisites
 -----
