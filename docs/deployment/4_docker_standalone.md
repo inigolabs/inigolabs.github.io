@@ -1,5 +1,5 @@
 ---
-title: Docker
+title: Docker Standalone
 parent: Deployment
 has_children: false
 nav_order: 4
