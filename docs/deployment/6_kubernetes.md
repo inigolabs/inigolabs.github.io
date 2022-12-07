@@ -2,15 +2,11 @@
 title: Kubernetes
 parent: Deployment
 has_children: false
-nav_order: 3
+nav_order: 6
 layout: page
 ---
 
-# Table of Contents
-- [Table of Contents](#table-of-contents)
-  - [Prerequisites](#prerequisites)
-  - [Kubernetes](#kubernetes)
-
+# Kubernetes SideCar
 
 Prerequisites
 -----

@@ -1,18 +1,29 @@
 ---
-title: Overriding Runtime Configuration
+title: Standalone Agent
 parent: Deployment
 has_children: false
-nav_order: 8
+nav_order: 1
 layout: page
 ---
 
-# Table of Contents
-- [Table of Contents](#table-of-contents)
-- [Runtime Configuration](#runtime-configuration)
-  - [Configuration Table](#configuration-table)
+# Standalone Agent
 
-# Runtime Configuration
-Using environment variables, you can customize certain functionalities of the Inigo daemon service, such as the port number, the log level, and other aspects. The table below shows the available toggles and buttons of the daemon.
+### Installation
+
+Download the inigo agent binary for your platform from the [artifacts](https://github.com/inigolabs/artifacts/releases) page.
+
+### Basic Configuration
+
+Configuring the agent can be done using a yaml config file and or using environment variables.  
+The following basic configuration is required:
+  ``` yaml
+    EgressURL: https://localhost:4000/query
+    ServiceToken: "YOUR-INIGO-SERVICE-TOKEN"
+  ```
+2. Set correct the binary permissions with `chmod +x` and execute.
+
+### Other Configuration
+Using environment variables, you can customize certain functionalities of the agent, such as the port number, the log level, and other aspects. The table below shows the available toggles and buttons of the agent.
 
 When you need to override any runtime defaults, you will export your environment variable and set it to the correct value. For example: `export INIGO_LOG_LEVEL=debug`.
 
@@ -30,3 +41,5 @@ When you need to override any runtime defaults, you will export your environment
 | Sidecar JWT Secret | `string` | No | Sidecar authentication JWT secret. | `INIGO_SIDECAR_JWT_SECRET` |
 
 
+
+4. Head over to the [runtime configuration documentation](deployment_runtime_override.html) to learn how to customize the agent. 

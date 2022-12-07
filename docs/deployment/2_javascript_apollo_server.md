@@ -1,41 +1,24 @@
 ---
-title: Middleware
+title: JavaScript Apollo Server
 parent: Deployment
 has_children: false
-nav_order: 4
+nav_order: 2
 layout: page
 ---
 
-# Table of Contents
-- [Table of Contents](#table-of-contents)
-- [JavaScript Middleware](#javascript-middleware)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Configuration](#configuration)
-  - [Passing Authentication using JWT header](#passing-authentication-using-jwt-header)
-- [Passing Authentication using Context](#passing-authentication-using-context)
-  - [Logging blocked requests](#logging-blocked-requests)
+# Apollo Server Middleware
 
-
-# JavaScript Middleware
-
-## Prerequisites
-
-A working development environment is always preferred with a stable node.js and build essentials
-* having [setup](https://app.inigo.io) an Inigo account and created a service token
-* nodejs & npm: https://nodejs.org
-* gcc (in case the ffi module is not prebuilt for your platform)
-
-## Installation
+### Installation
 
 1. Install the `inigo.js` middleware package
    ```sh
    npm install inigo.js
    ```
 2. Install your platform specific library:
-
-    ## Available libraries:
+    ```sh
+    npm install inigo-linux-amd64
     ```
+    Available libraries:
     - inigo-linux-amd64
     - inigo-linux-arm64
     - inigo-alpine-amd64
@@ -43,13 +26,8 @@ A working development environment is always preferred with a stable node.js and 
     - inigo-darwin-amd64
     - inigo-darwin-arm64
     - inigo-windows-amd64
-    ```
-    For example, install `inigo-linux-amd64`
-    ```sh
-    npm install inigo-linux-amd64
-    ```
 
-## Configuration
+### Configuration
 1. Import `InigoPlugin` & `InigoConfig` from `inigo.js` module
     ```js
     import { InigoPlugin, InigoConfig } from 'inigo.js';
@@ -85,7 +63,7 @@ A working development environment is always preferred with a stable node.js and 
           });
           ```
 
-3. Plug in the middleware by adding the following to `plugins` within `ApolloServer`
+2. Plug in the middleware by adding the following to `plugins` within `ApolloServer`
     ```js
     InigoPlugin(inigoCfg)
     ```
@@ -102,7 +80,7 @@ A working development environment is always preferred with a stable node.js and 
     });
     ```
 
-4. Your final configuration should look like the following example
+3. Your final configuration should look like the following example
     ```js
     import { ApolloServer } from 'apollo-server';
     import { InigoPlugin, InigoConfig } from 'inigo.js'; // <---
@@ -138,7 +116,7 @@ A working development environment is always preferred with a stable node.js and 
     });
     ```
 
-## Passing Authentication using JWT header
+### Passing Authentication using JWT header
   1. Configure and apply your `service.yml`
   ```yaml
   kind: Service
@@ -169,7 +147,7 @@ A working development environment is always preferred with a stable node.js and 
   );
   ```
 
-# Passing Authentication using Context
+### Passing Authentication using Context
 
   1. Configure and apply your `service.yml`
   ```yaml
@@ -206,32 +184,3 @@ A working development environment is always preferred with a stable node.js and 
     }
   );
   ```
-
-## Logging blocked requests
-```js
-const server = new ApolloServer({
-  typeDefs,
-  resolvers,
-  introspection: true,
-  plugins: [
-    InigoPlugin(inigoCfg),
-    LogInigoBlockedRequests() // <---
-  ],
-}
-
-function LogInigoBlockedRequests() { // <---
-  return { 
-    async requestDidStart({ context } /* : { context: InigoContext } */) {
-      return {
-        async didEncounterErrors({ errors }) {
-          // check for `blocked` state
-          if (!context.inigo.blocked) return; 
-
-          // Print the request processing result
-          console.log("Inigo blocked request:", context.inigo.result); 
-        }
-      };
-    }
-  }
-}
-```
