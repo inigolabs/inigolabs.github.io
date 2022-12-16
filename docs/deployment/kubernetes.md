@@ -7,6 +7,7 @@ layout: page
 ---
 
 # Kubernetes Sidecar
+--------------------
 
 Prerequisites
 -----
@@ -67,7 +68,7 @@ Kubernetes
     metadata:
       name: starwars-sidecar-token
     stringData:
-      INIGO_SERVICE_TOKEN: "YOUR_SERVICE_TOKEN_HERE"
+      INIGO_SERVICE_TOKEN: "YOUR-INIGO-SERVICE-TOKEN"
     ---
     apiVersion: v1
     kind: ConfigMap
@@ -101,7 +102,7 @@ Kubernetes
         app: starwars
   ```
 
-  2. Make sure to replace `YOUR_SERVICE_TOKEN_HERE` with your own service token.
+  2. Make sure to replace `YOUR-INIGO-SERVICE-TOKEN` with your own service token.
 
   3. Make sure to change starwars with your own service and its configurations.
 

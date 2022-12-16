@@ -20,10 +20,10 @@ Creating a service can be achieved in two way, using the cli or ui.
 inigo create service <service_name>
 inigo create token <service_name>
 ```
-Replace <service_name> with the name you want to give this service endpoint.
+Replace `<service_name>` with the name you want to give this service endpoint.
 
 ### [ui](/docs/cli.html) service creation
-Click the Configure Service button in the ui and follow the on screen instructions. 
+Click the `Configure Services` button in the ui and follow the on screen instructions. 
 <p align="center">
     <img src="/assets/images/configure_services.png" alt="Deployment" width="400"/>
 </p>

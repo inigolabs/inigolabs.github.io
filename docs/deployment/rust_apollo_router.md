@@ -7,6 +7,7 @@ layout: page
 ---
 
 # Rust Apollo Router
+--------------------
 
 ### Configuration
 ```yaml
