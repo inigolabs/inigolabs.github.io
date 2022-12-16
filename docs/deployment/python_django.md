@@ -7,6 +7,7 @@ layout: page
 ---
 
 # Python Django Middleware
+--------------------------
 
 ### Installation
 
@@ -24,7 +25,7 @@ MIDDLEWARE = [
 
 INIGO = {
     'DEBUG': False,
-    'TOKEN': 'Your Inigo service token',
+    'TOKEN': 'YOUR-INIGO-SERVICE-TOKEN',
     'GRAPHENE_SCHEMA': 'app.schema.schema',
     'PATH': '/graphql',
     'JWT': 'authorization',
@@ -33,29 +34,14 @@ INIGO = {
 
 ### Configuration options
 
-#### __`DEBUG`__
-**Optional. Default:** False
-
-If not provided, Django DEBUG setting is used.
-
-#### __`TOKEN`__
-**Required.** Obtain a service token from [app.inigo.io](app.inigo.io)
-
-#### __`GRAPHENE_SCHEMA`__
-**Optional.** The path to graphene schema instance. If not provided, InigoMiddleware will try to pick it up from __`GRAPHENE.SCHEMA`__ settings.
-
-#### __`SCHEMA_PATH`__
-**Optional.** The path to graphql schema file.
-
-#### __`PATH`__
-**Optional. Default:** /graphql. 
-
-Your graphql route path.
-
-#### __`JWT`__
-**Optional. Default:** authorization.
-
-Name of your authorization header with jwt as a value. See **Authorization** for more details.
+| Name | Type | Required | Description |
+| --- | --- | --- | --- |
+| `TOKEN` | `string` | Yes | Service token |
+| `GRAPHENE_SCHEMA` | `string` | No<br>default:`GRAPHENE.SCHEMA` | Path to graphene schema instance |
+| `SCHEMA_PATH` | `string` | No | Path to GraphQL schema file |
+| `PATH` | `string` | No<br>default:`/graphql` | Path to GraphQL schema file |
+| `JWT` | `bool` | No<br>default: `Authorization` | JWT authorization header key name |
+| `DEBUG` | `bool` | No<br>default: `False` | Enable debug mode |
 
 ---
 

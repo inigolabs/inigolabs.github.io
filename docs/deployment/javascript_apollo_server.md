@@ -7,6 +7,7 @@ layout: page
 ---
 
 # Apollo Server Middleware
+--------------------------
 
 ### Installation
 
@@ -37,7 +38,7 @@ layout: page
       - Create an inigo config object
         ```js
         const inigoCfg = new InigoConfig({
-            Token: "eyJhbGc..", // Input token generated using inigo cli or web panel
+            Token: "YOUR-INIGO-SERVICE-TOKEN", // Input token generated using inigo cli or web panel
             Schema: typeDefs // String based SDL format GraphQL Schema
         });
         ```
@@ -58,7 +59,7 @@ layout: page
       3. Create an inigo config object
           ```js
           const inigoCfg = new InigoConfig({
-              Token: "eyJhbGc..", // Input token generated using inigo cli or web panel
+              Token: "YOUR-INIGO-SERVICE-TOKEN", // Input token generated using inigo cli or web panel
               Schema: printSchema(typeDefs) // Convert GraphQLSchema object to SDL format
           });
           ```

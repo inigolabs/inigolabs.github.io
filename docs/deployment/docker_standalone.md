@@ -7,11 +7,12 @@ layout: page
 ---
 
 # Docker Standalone
+-------------------
 
   ``` sh
   $ docker run -d \
     -e INIGO_EGRESS_URL="http://localhost:4000/query" \
-    -e INIGO_SERVICE_TOKEN="PUT YOUR SERVICE TOKEN HERE" \
+    -e INIGO_SERVICE_TOKEN="YOUR-INIGO-SERVICE-TOKEN" \
     -p 80:80 inigohub/sidecar
   ```
 
