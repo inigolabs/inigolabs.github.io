@@ -2,39 +2,37 @@
 title: Installation
 parent: Command Line Interface (CLI)
 has_children: false
-nav_order: 2
+nav_order: 1
 layout: page
 ---
 
-# Table of Contents
-- [Table of Contents](#table-of-contents)
-- [Inigo CLI](#inigo-cli)
-  - [Installation](#installation)
-    - [MacOS and Linux](#macos-and-linux)
-    - [Executable](#executable)
-  - [Usage and Documentation](#usage-and-documentation)
+# Installation
+--------------
 
+Use brew to easily install the cli and make it easy to upgrade to the latest release in the future.  
+If brew is not available in your system, head over to our [artifacts](https://github.com/inigolabs/artifacts/releases/latest) page get the right executable for your system. 
 
-# Inigo CLI
+### MacOS or Linux (brew)
+- First time install:
+   ```
+   brew tap inigolabs/homebrew-tap
+   brew install inigo_cli
+   ```
 
----
+- Upgrade to the latest version
+   ```
+   brew upgrade inigo_cli
+   ```
+- If you don't have `brew` you can install it from [here](https://brew.sh/).
 
-Inigo CLI, or `inigo`, is a command line interface that allows your to manage your GraphQL service configurations, for use in the command line or CI/CD pipelines.
+### From Executable
+- Download and install the binary for you system [here](https://github.com/inigolabs/artifacts/releases/latest).
 
-## Installation
-
-### MacOS and Linux
-1. Install the tap
-`brew tap inigolabs/homebrew-tap`
-
-2. Install the CLI
-`brew install inigo_cli`
-
-3. Make sure you are able to run it `inigo -h`
+## Test Run
+Make sure you everything is working by running the `inigo` command. 
 
 ```
 $ inigo -h
-
 NAME:
    inigo - Inigo CLI
 
@@ -42,13 +40,21 @@ USAGE:
    inigo [global options] command [command options] [arguments...]
 
 VERSION:
-   v0.14.0 : 2022-09-14T21:28:02Z : b764a19e
+   v0.17.3 : 2022-12-07T07:18:51Z : 8e475c58
+
+COMMANDS:
+   login    login
+   logout   logout
+   apply    apply a configuration file
+   create   create a resource
+   delete   delete a resource
+   get      get info for a particular resource
+   check    check [entity]
+   help, h  Shows a list of commands or help for one command
+
+GLOBAL OPTIONS:
+   --debug        Run with debugging info (default: false)
+   --help, -h     show help (default: false)
+   --version, -v  print the version (default: false)
 ```
 
-If you don't have Brew, you can install it from [here](https://brew.sh/).
-
-### Executable
-Download and install the binary for you system [here](https://github.com/inigolabs/cli/releases/latest).
-
-## Usage and Documentation
-All `inigo` CLI documentation live [here](../../Usage/CLI/inigo.html).
