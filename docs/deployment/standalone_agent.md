@@ -38,7 +38,7 @@ The table below contains a detailed description of all the available toggles and
 When you need to override any runtime defaults, you will export your environment variable and set it to the correct value. For example: `export INIGO_LOG_LEVEL=debug`.
 
 | Environment Variable | YAML Config | Type | Required | Description |
-| ---  | :---: | --- | --- | --- | --- |
+| ---  | :---: | --- | --- | --- |
 | `INIGO_EGRESS_URL` | `EgressURL` | `string` | Yes | URL of the proxied application (GraphQL Endpoint) |
 | `INIGO_SERVICE_TOKEN` | `ServiceToken` | `string` | Yes | Service token obtained from Inigo |
 | `INIGO_LOG_LEVEL` | `LogLevel` | `string` | No<br>default: `info`| Logging level |
