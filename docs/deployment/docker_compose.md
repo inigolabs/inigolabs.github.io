@@ -8,7 +8,7 @@ layout: page
 
 # Docker Compose
 
-  **Note:** this code snippet includes a starwars graphql example instance, make sure to replace with your own service.
+  **Note:** this code snippet includes a starwars graphql example instance, make sure to replace it with your own service.
 
   1. Create a `docker-compose.yml` file
 
@@ -24,14 +24,11 @@ layout: page
             - 80:80
           # env_file: .env
           environment:
-            INIGO_EGRESS_URL: http://starwars:80/query # Make sure to configure
-            INIGO_SERVICE_TOKEN: "PUT YOUR SERVICE TOKEN HERE" # This can be stored in an .env file instead
-            INIGO_GRAPHQL_ROUTE: /query
+            INIGO_EGRESS_URL: http://starwars:80/query # replace with your GraphQL endpoint
+            INIGO_SERVICE_TOKEN: "PUT YOUR SERVICE TOKEN HERE" # can be stored in an .env file instead
       ```
-
-      > Head over to the [runtime configuration documentation](deployment_runtime_override.html) to learn more about the available environment variables.
 
   2. Run the services
       ``` sh
-      $ docker-compose up -d
+      docker compose up -d
       ```
