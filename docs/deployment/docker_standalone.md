@@ -18,4 +18,5 @@ layout: page
 
   **Note:** Make sure to replace `http://localhost:4000/query` with your target service endpoint.
 
-  > Head over to the [runtime configuration documentation](deployment_runtime_override.html) to learn more about the available environment variables.
+  > Head over to the [Configuration documentation](https://docs.inigo.io/docs/configuration.html) to learn more about the available environment variables.
+ 
