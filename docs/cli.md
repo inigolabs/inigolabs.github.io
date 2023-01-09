@@ -14,13 +14,13 @@ With the CLI, you can perform actions such as creating new services, applying ne
 If you are familiar with kubernetes kubectl command, you'll feel right at home using the Inigo cli. 
 
 ### Commands
-- [inigo login](commands/login.html)
-- [inigo logout](commands/logout.html)
-- [inigo apply](commands/apply.html)
-- [inigo create](commands/create.html)
-- [inigo delete](commands/delete.html)
-- [inigo get](commands/get.html)
-- [inigo check](commands/check.html)
+- [inigo login](cli/commands/login.html)
+- [inigo logout](cli/commands/logout.html)
+- [inigo apply](cli/commands/apply.html)
+- [inigo create](cli/commands/create.html)
+- [inigo delete](cli/commands/delete.html)
+- [inigo get](cli/commands/get.html)
+- [inigo check](cli/commands/check.html)
 
 ### Optional flags
 * `--debug`
