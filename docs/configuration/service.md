@@ -11,7 +11,7 @@ layout: page
 Service
 =======
 
-Service config allows you to configure global (system) service settings, related to overall Inigo agent operability. Service configuration allows Inigo's users to apply fine-grianed authorization and access controls. Not all clients are the same; you may have authenticated and unauthenticated clients using your application. Using the access control capabilities of Inigo, you can enforce strong authorization controls depending on the context of your clients.
+Service config allows you to configure global (system) service settings, related to overall Inigo agent operability. Service configuration allows Inigo's users to apply fine-grained authorization and access controls. Not all clients are the same; you may have authenticated and unauthenticated clients using your application. Using the access control capabilities of Inigo, you can enforce strong authorization controls depending on the context of your clients.
 
 ---
 
